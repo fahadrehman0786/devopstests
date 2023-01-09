@@ -42,7 +42,7 @@ export default class Login extends Component {
             var temper = bcrypt.compareSync(userAdd.password,res.data.password);
             console.log(res);
             if (res.data.email===userAdd.email && temper) {
-                alert("hii");
+                
                 console.log(res.data);
                 localStorage.setItem('user_type', res.data.type);
                 localStorage.setItem('user_name', res.data.name);
